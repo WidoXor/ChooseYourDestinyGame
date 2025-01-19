@@ -1,7 +1,7 @@
 let numeroSecreto;
 let intentos;
 let almacenaDatos = [];
-let numeroMaximo = 3;
+let numeroMaximo = 10;
 
 condicionesIniciales();
 
@@ -33,7 +33,7 @@ function generarNumeroSecreto() {
     let numeroGenerado = Math.floor(Math.random()*numeroMaximo)+1;
     console.log(numeroGenerado, almacenaDatos, almacenaDatos.length, numeroMaximo);
     if (almacenaDatos.length == numeroMaximo) {
-        alert('Ya se sortearon todos los números posibles, el juego se reiniciará');
+        alert('Ya se sortearon todos los números posibles, el juego se reiniciará en ');
         alert('3');
         alert('2');
         alert('1');
